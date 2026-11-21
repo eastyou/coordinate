@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "coordinate"
+version = "0.1.0"
+description = "四象限坐标网格：读点坐标、按坐标连点成图与答案页"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "eastyou" }]
+keywords = ["education", "math", "coordinate", "geometry", "worksheet", "printable", "svg"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Environment :: Console",
+  "Topic :: Education",
+]
+dependencies = []
+
+[project.scripts]
+coordinate = "coordinate.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/eastyou/coordinate"
+Source = "https://github.com/eastyou/coordinate"
+
+[tool.setuptools]
+packages = ["coordinate"]
